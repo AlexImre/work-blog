@@ -34,9 +34,7 @@ Let's break down my new favourite website **https://www.amius.com/pages/who-we-a
 
 Your browser parses all of this instantly to figure out: "Right, I need to securely connect to the Amius website and grab their `who-we-are` page."
 
-**Isn't she pretty**
-
-![alt text](amius.png)
+![alt text](url.png)
 
 ---
 
@@ -45,6 +43,8 @@ Your browser parses all of this instantly to figure out: "Right, I need to secur
 So we know what links are, and we know what we want to load, but computers themselves are pretty dumb and don't understand links, instead, they speak numbers. Specifically, IP addresses like `192.168.1.1`.
 
 Think of it like the old Yellow Pages phone book (curious if there is anyone that doesn't know what this is). You know the business name you want to call, but you need to look up their actual phone number first. That's exactly what DNS (Domain Name System) does.
+
+![alt text](yellow-pages.png)
 
 But first, it checks to see if we recently visited that website, no need to re-check the big phone book if you already recently looked it up and can "remember" the phone number.
 
@@ -58,7 +58,9 @@ Here's the lookup chain:
 
 Once found, your browser gets back the IP address—the actual "phone number" for Amius' server (which btw is ...). Now we can make the call.
 
-![alt text](yellow-pages.png)
+**Isn't she pretty**
+
+![alt text](amius.png)
 
 ---
 
