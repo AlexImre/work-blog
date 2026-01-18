@@ -2,15 +2,15 @@
 
 ---
 
-The tech world is filled with stuff that most people take for granted, and we're all just used to things working without an apreciation of what's actually going going on. Quite often, things that seem simple and work reliably can actually be some of the most complex technology.
+The tech world is filled with stuff that most people take for granted, and we're all just used to things working without an appreciation of what's actually going on. Quite often, things that seem simple and work reliably can actually be some of the most complex technology.
 
 I think a perfect example of this is our every day use of the browser.
 
 `Paste link in. Get Website. Simple!`
 
-But it really isnt simple. In order to get here, countless people have spent countless years building all sorts of cool complicated things that enable us to use browsers, and the web as we do.
+But it really isn't simple. In order to get here, countless people have spent countless years building all sorts of cool complicated things that enable us to use browsers, and the web as we do.
 
-This post takes a **very very very** high-level peek under the hood.
+This post takes a **very, very, very** high-level peek under the hood.
 
 **Mandatory pic of the OG (Tim Berners Lee) who started the world wide web**
 
@@ -32,9 +32,9 @@ Let's break down my new favourite website **https://www.amius.com/pages/who-we-a
 | **Extension** | `.com`              | The category (commercial, organisation, country, etc.)                             |
 | **Path**      | `/pages/who-we-are` | The specific page you want—like a room number in a building                        |
 
-Your browser parses all of this instantly to figure out: "Right, I need to securely connect to the Amius website and grab their "who-we-are" page."
+Your browser parses all of this instantly to figure out: "Right, I need to securely connect to the Amius website and grab their `who-we-are` page."
 
-**Isnt she pretty**
+**Isn't she pretty**
 
 ![alt text](amius.png)
 
@@ -44,7 +44,7 @@ Your browser parses all of this instantly to figure out: "Right, I need to secur
 
 So we know what links are, and we know what we want to load, but computers themselves are pretty dumb and don't understand links, instead, they speak numbers. Specifically, IP addresses like `192.168.1.1`.
 
-Think of it like the old Yellow Pages phone book (curious if there is anyone that doesnt know what this is). You know the business name you want to call, but you need to look up their actual phone number first. That's exactly what DNS (Domain Name System) does.
+Think of it like the old Yellow Pages phone book (curious if there is anyone that doesn't know what this is). You know the business name you want to call, but you need to look up their actual phone number first. That's exactly what DNS (Domain Name System) does.
 
 But first, it checks to see if we recently visited that website, no need to re-check the big phone book if you already recently looked it up and can "remember" the phone number.
 
@@ -56,7 +56,7 @@ Here's the lookup chain:
 4. **Your ISP's DNS server** – Your internet provider's lookup service.
 5. **The wider DNS network** – If nobody knows, the request travels up through a hierarchy of DNS servers until it finds the answer.
 
-Once found, your browser gets back the IP address—the actual "phone number" for Amius's server (which btw is ...). Now we can make the call.
+Once found, your browser gets back the IP address—the actual "phone number" for Amius' server (which btw is ...). Now we can make the call.
 
 ![alt text](yellow-pages.png)
 
@@ -208,7 +208,7 @@ Document
             └── footer
 ```
 
-Here's what the website DOM tree looks when insepecting the dev tools on our website page (on the right), just a bunch of HTML. Doesnt look much like a website! I thought it was interesting to see some 'Shopify' sections here, I wonder what that tells us!
+Here's what the website DOM tree looks when inspecting the dev tools on our website page (on the right), just a bunch of HTML. doesn't look much like a website! I thought it was interesting to see some 'Shopify' sections here, I wonder what that tells us!
 
 ![alt text](dom.png)
 
