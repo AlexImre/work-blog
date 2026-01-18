@@ -12,7 +12,7 @@ But it really isn't simple. In order to get here, countless people have spent co
 
 This post takes a **very, very, very** high-level peek under the hood.
 
-**Mandatory pic of the OG (Tim Berners Lee) who started the world wide web**
+_Mandatory pic of the OG (Tim Berners Lee) who started the world wide web_
 
 ![alt text](tbl.png)
 
@@ -60,7 +60,7 @@ Once found, your browser gets back the IP address—the actual "phone number" fo
 
 Now we can make the call.
 
-**Isn't she pretty**
+_Isn't she pretty_
 
 ![alt text](amius.png)
 
@@ -114,6 +114,10 @@ Each packet is wrapped with crucial information:
 - **Sequence number** – Its position in the original message (so it can be reassembled)
 - **Error-checking data** – To verify nothing got corrupted in transit
 
+_What a packet looks like._
+
+![alt text](packet.png)
+
 ### The Journey: Packets Take Different Routes
 
 For reasons, **your packets don't all take the same path**.
@@ -121,8 +125,6 @@ For reasons, **your packets don't all take the same path**.
 When you visit a website, your request might travel through dozens of different networks, cities, even countries. And each packet can take a completely different route depending on network conditions at that exact moment.
 
 Picture a swarm of delivery drivers all leaving from your house, each carrying one box of your flat-pack furniture. One driver takes the motorway. Another takes A-roads because of traffic. A third goes via a completely different city because a road is closed. They all arrive at the destination at different times, in a random order—but somehow the furniture still gets assembled perfectly.
-
-![alt text](packet.png)
 
 ### Routers: The Traffic Controllers
 
@@ -156,7 +158,7 @@ Destination server
 
 Our data physically travels through undersea fibre optic cables spanning thousands of miles, and it happens in **milliseconds**.
 
-Below, a picture from a computer science GCSE source, packets traversing across different nodes!
+_Below, a picture from a computer science GCSE source, packets traversing across different nodes!_
 
 ![alt text](packets.png)
 
@@ -212,7 +214,7 @@ Document
             └── footer
 ```
 
-Here's what the website DOM tree looks when inspecting the dev tools on our website page (on the right), just a bunch of HTML. doesn't look much like a website! I thought it was interesting to see some 'Shopify' sections here, I wonder what that tells us!
+_Here's what the website DOM tree looks when inspecting the dev tools on our website page (on the right), just a bunch of HTML. doesn't look much like a website! I thought it was interesting to see some 'Shopify' sections here, I wonder what that tells us!_
 
 ![alt text](dom.png)
 
