@@ -56,7 +56,9 @@ Here's the lookup chain:
 4. **Your ISP's DNS server** – Your internet provider's lookup service.
 5. **The wider DNS network** – If nobody knows, the request travels up through a hierarchy of DNS servers until it finds the answer.
 
-Once found, your browser gets back the IP address—the actual "phone number" for Amius' server (which btw is ...). Now we can make the call.
+Once found, your browser gets back the IP address—the actual "phone number" for Amius' server (which btw is `23.227.38.74`).
+
+Now we can make the call.
 
 **Isn't she pretty**
 
