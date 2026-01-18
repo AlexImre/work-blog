@@ -193,13 +193,13 @@ The internet is made up of thousands of interconnected networks, all agreeing to
 
 ## The Browser: Rendering the Page and Making Things Pretty
 
-Okay, we made a request, it bounced around the world to some server, which responded with a bunch of code. How do we actually get something that that looks nice, and that we can interact with on the screen?
+Okay, we made a request, it bounced around the world to some server, which responded with a bunch of code. How do we actually get something that looks nice, and that we can interact with on the screen?
 
 Reminder, the server sent back some `HTML, CSS and Javascript files`.
 
 ### Step 1: Parsing the HTML → Building the DOM
 
-The browser reads through the HTML and constructs something called the **DOM (Document Object Model)**. Think of it as a family tree of every element on the page—headings, paragraphs, buttons, images—all organised in a hierarchy.
+The browser reads through the HTML and constructs something called the **DOM (Document Object Model)**. Think of it as a family tree of every element on the page—headings, paragraphs, buttons, images, all organised in a hierarchy.
 
 ```
 Document
@@ -236,13 +236,13 @@ Finally, the browser **paints** pixels to your screen—filling in colours, rend
 
 ### Step 6: JavaScript Comes Alive
 
-Throughout this process (and after), **JavaScript** runs to add interactivity. Dropdown menus, form validation, animations, dynamic content loading—JS makes pages feel alive rather than static documents.
+Throughout this process (and after), **JavaScript** runs to add interactivity. Dropdown menus, form validation, animations, dynamic content loading, JS makes pages feel alive rather than static documents.
 
 ---
 
 ## All of This in Under a Second
 
-Everything we've just covered—URL parsing, DNS lookup, secure connection, packets travelling across continents via different routes, reassembly, request/response, DOM construction, styling, layout, and painting—typically happens in **under one second**.
+Everything we've just covered: URL parsing, DNS lookup, secure connection, packets travelling across continents via different routes, reassembly, request/response, DOM construction, styling, layout, and painting typically happens in **under one second**.
 
 Thousands of packets. Dozens of network hops. Multiple servers. Undersea cables. And your browser stitches it all together seamlessly.
 
