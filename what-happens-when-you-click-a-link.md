@@ -74,8 +74,6 @@ The 's' at the start of **https://** stands for "secure," and it's doing some im
 
 This all happens through something called a **TLS handshake**—a quick back-and-forth where your browser and the server agree on how to encrypt their conversation. It's like two spies agreeing on a secret code before passing notes.
 
-**Why this matters for finance:** When you're dealing with sensitive information—account details, transactions, personal data—encryption isn't optional. That padlock icon in your browser's address bar means your connection is protected. No padlock? Think twice before entering any sensitive information.
-
 ---
 
 ## The Request and Response: Asking and Receiving
@@ -99,7 +97,7 @@ But how does all this data actually travel across the internet?
 
 Now we're in the networking part of the journey, things get a bit head-scratchy here and people much smarter than me have built all sorts of protocols for how stuff works. For some light bed-time reading check out the [Transmission Control Protocol (TCP)](https://www.ietf.org/rfc/rfc793.txt), just one of the many amazing things that underpin the internet.
 
-Again, to put it **very very very** simply, all that data, your request, the server's response, every image and script doesn't travel as one complete piece. Instead, it gets chopped up into tiny chunks called **packets**. A single webpage might involve thousands of these packets.
+Again, to put it **very, very, very** simply, all that data, your request, the server's response, every image and script doesn't travel as one complete piece. Instead, it gets chopped up into tiny chunks called **packets**. A single webpage might involve thousands of these packets.
 
 ### Why Packets?
 
@@ -181,11 +179,11 @@ Consider this: when you load a modern webpage, you might be receiving:
 
 Hundreds of packets, from multiple sources, travelling different routes across the globe, all arriving and assembling into a coherent page, typically in under a second.
 
-The internet isn't one single network. It's thousands of interconnected networks, all agreeing to pass each other's packets along. And somehow, against all odds, it works reliably billions of times per day.
+The internet is made up of thousands of interconnected networks, all agreeing to pass each other's packets along. And somehow, against all odds, it works reliably billions of times per day.
 
 ---
 
-## The Browser's Secret Kitchen: Rendering the Page
+## The Browser: Rendering the Page and Making Things Pretty
 
 Okay, we made a request, it bounced around the world to some server, which responded with a bunch of code. How do we actually get something that that looks nice, and that we can interact with on the screen?
 
@@ -236,7 +234,7 @@ Throughout this process (and after), **JavaScript** runs to add interactivity. D
 
 ## All of This in Under a Second
 
-Here's the mind-bending part: everything we've just covered—URL parsing, DNS lookup, secure connection, packets travelling across continents via different routes, reassembly, request/response, DOM construction, styling, layout, and painting—typically happens in **under one second**.
+Everything we've just covered—URL parsing, DNS lookup, secure connection, packets travelling across continents via different routes, reassembly, request/response, DOM construction, styling, layout, and painting—typically happens in **under one second**.
 
 Thousands of packets. Dozens of network hops. Multiple servers. Undersea cables. And your browser stitches it all together seamlessly.
 
