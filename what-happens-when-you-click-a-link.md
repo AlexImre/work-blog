@@ -1,21 +1,20 @@
 # The Magic Behind the Link: What Really Happens When You Visit a Website
 
-_7 minute read_
-
 ---
 
 The tech world is filled with stuff that most people take for granted, and we're all just used to things working without an apreciation of what's actually going going on. Quite often, things that seem simple and work reliably can actually be some of the most complex technology.
 
 I think a perfect example of this is our every day use of the browser.
 
-`Put link in. Get Website. Simple!`
+`Paste link in. Get Website. Simple!`
 
 But it really isnt simple. In order to get here, countless people have spent countless years building all sorts of cool complicated things that enable us to use browsers, and the web as we do.
 
 This post takes a **very very very** high-level peek under the hood.
 
 **Mandatory pic of the OG who started the world wide web**
-![alt text](image-1.png)
+
+![alt text](tbl.png)
 
 ---
 
@@ -36,7 +35,8 @@ Let's break down my new favourite website **https://www.amius.com/pages/who-we-a
 Your browser parses all of this instantly to figure out: "Right, I need to securely connect to the Amius website and grab their "who-we-are" page."
 
 **Isnt she pretty**
-![alt text](image.png)
+
+![alt text](amius.png)
 
 ---
 
@@ -58,15 +58,13 @@ Here's the lookup chain:
 
 Once found, your browser gets back the IP address—the actual "phone number" for Amius's server (which btw is ...). Now we can make the call.
 
-![alt text](image-2.png)
+![alt text](yellow-pages.png)
 
 ---
 
 ## Making a Secure Connection: Why HTTPS Matters
 
-Notice that **https://** at the start? That 's' stands for "secure," and it's doing some seriously important work—especially for a finance company.
-
-When you connect to a website with HTTPS, three things happen:
+Notice that **https://** at the start? That 's' stands for "secure," and it's doing some important work. When you connect to a website with HTTPS, three things happen:
 
 1. **Verification** – Your browser checks the website's digital certificate to confirm you're actually talking to Amius, not an imposter pretending to be them.
 
@@ -93,15 +91,15 @@ The server receives this, finds the right content, and sends back an **HTTP resp
 
 Think of it like ordering at a restaurant. You ask for a meal, the kitchen prepares it, and the waiter brings back all the components—plate, cutlery, condiments—everything needed for the complete experience.
 
-But how does all this data actually travel across the internet? That's where things get really interesting.
+But how does all this data actually travel across the internet?
 
 ---
 
 ## The Journey Across the Internet: Packets, Routes, and Reassembly
 
-Now we're in the networking part of the journey, things get a bit head scratchy here and people much smarter than me have built all sorts of protocols for how stuff works. For some light bed-time reading check out the [Transmission Control Protocol (TCP)](https://www.ietf.org/rfc/rfc793.txt), just one of the many other amazing things that underpin the internet.
+Now we're in the networking part of the journey, things get a bit head-scratchy here and people much smarter than me have built all sorts of protocols for how stuff works. For some light bed-time reading check out the [Transmission Control Protocol (TCP)](https://www.ietf.org/rfc/rfc793.txt), just one of the many amazing things that underpin the internet.
 
-Again, to put it **very very very** simply, all that data—your request, the server's response, every image and script—doesn't travel as one complete piece. Instead, it gets chopped up into tiny chunks called **packets**. A single webpage might involve thousands of these packets.
+Again, to put it **very very very** simply, all that data, your request, the server's response, every image and script doesn't travel as one complete piece. Instead, it gets chopped up into tiny chunks called **packets**. A single webpage might involve thousands of these packets.
 
 ### Why Packets?
 
@@ -121,6 +119,10 @@ For reasons, **your packets don't all take the same path**.
 When you visit a website, your request might travel through dozens of different networks, cities, even countries. And each packet can take a completely different route depending on network conditions at that exact moment.
 
 Picture a swarm of delivery drivers all leaving from your house, each carrying one box of your flat-pack furniture. One driver takes the motorway. Another takes A-roads because of traffic. A third goes via a completely different city because a road is closed. They all arrive at the destination at different times, in a random order—but somehow the furniture still gets assembled perfectly.
+
+Below, a picture from a computer science GCSE source, packets traversing across different nodes!
+
+![alt text](packets.png)
 
 ### Routers: The Traffic Controllers
 
@@ -181,13 +183,11 @@ Hundreds of packets, from multiple sources, travelling different routes across t
 
 The internet isn't one single network. It's thousands of interconnected networks, all agreeing to pass each other's packets along. And somehow, against all odds, it works reliably billions of times per day.
 
-> **📊 DIAGRAM SUGGESTION:** A world map showing packets taking different routes from the UK to a US server—some via transatlantic cable, some routing through Europe first—all converging at the destination. Include a visual of packets arriving out of order and being reassembled.
-
 ---
 
 ## The Browser's Secret Kitchen: Rendering the Page
 
-This is where things get really interesting. Your browser has received a bunch of code—but how does it become the beautiful, interactive page you actually see?
+Okay, we made a request, it bounced around the world to some server, which responded with a bunch of code. How do we actually get something that that looks nice, and that we can interact with on the screen?
 
 ### Step 1: Parsing the HTML → Building the DOM
 
@@ -205,6 +205,10 @@ Document
             │    └── p
             └── footer
 ```
+
+Here's what the website DOM tree looks when insepecting the dev tools on our website page (on the right), just a bunch of HTML. Doesnt look much like a website! I thought it was interesting to see some 'Shopify' sections here, I wonder what that tells us!
+
+![alt text](dom.png)
 
 ### Step 2: Parsing the CSS → Building the CSSOM
 
