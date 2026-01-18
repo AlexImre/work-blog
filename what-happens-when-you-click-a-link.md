@@ -12,7 +12,7 @@ But it really isnt simple. In order to get here, countless people have spent cou
 
 This post takes a **very very very** high-level peek under the hood.
 
-**Mandatory pic of the OG who started the world wide web**
+**Mandatory pic of the OG (Tim Berners Lee) who started the world wide web**
 
 ![alt text](tbl.png)
 
@@ -230,8 +230,6 @@ Finally, the browser **paints** pixels to your screen—filling in colours, rend
 
 Throughout this process (and after), **JavaScript** runs to add interactivity. Dropdown menus, form validation, animations, dynamic content loading—JS makes pages feel alive rather than static documents.
 
-> **📊 DIAGRAM SUGGESTION:** A pipeline diagram showing: HTML → DOM, CSS → CSSOM, both merging into Render Tree → Layout → Paint → Display. With JavaScript shown as interacting throughout.
-
 ---
 
 ## All of This in Under a Second
@@ -240,7 +238,9 @@ Here's the mind-bending part: everything we've just covered—URL parsing, DNS l
 
 Thousands of packets. Dozens of network hops. Multiple servers. Undersea cables. And your browser stitches it all together seamlessly.
 
-The next time you click a link and a website appears, you'll know there's an entire symphony of global systems working in perfect harmony behind the scenes. Not magic—just very clever engineering.
+Pretty cool stuff.
+
+![](https://media1.tenor.com/m/9ItR8nSuxE0AAAAC/thumbs-up-computer.gif)
 
 ---
 
