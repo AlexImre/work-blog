@@ -122,9 +122,7 @@ When you visit a website, your request might travel through dozens of different 
 
 Picture a swarm of delivery drivers all leaving from your house, each carrying one box of your flat-pack furniture. One driver takes the motorway. Another takes A-roads because of traffic. A third goes via a completely different city because a road is closed. They all arrive at the destination at different times, in a random order—but somehow the furniture still gets assembled perfectly.
 
-Below, a picture from a computer science GCSE source, packets traversing across different nodes!
-
-![alt text](packets.png)
+![alt text](packet.png)
 
 ### Routers: The Traffic Controllers
 
@@ -157,6 +155,10 @@ Destination server
 ```
 
 Our data physically travels through undersea fibre optic cables spanning thousands of miles, and it happens in **milliseconds**.
+
+Below, a picture from a computer science GCSE source, packets traversing across different nodes!
+
+![alt text](packets.png)
 
 ### TCP: The Reliable Delivery Service
 
