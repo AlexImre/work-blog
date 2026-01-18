@@ -64,7 +64,7 @@ Once found, your browser gets back the IP address—the actual "phone number" fo
 
 ## Making a Secure Connection: Why HTTPS Matters
 
-Notice that **https://** at the start? That 's' stands for "secure," and it's doing some important work. When you connect to a website with HTTPS, three things happen:
+The 's' at the start of **https://** stands for "secure," and it's doing some important work. When you connect to a website with HTTPS, three things happen:
 
 1. **Verification** – Your browser checks the website's digital certificate to confirm you're actually talking to Amius, not an imposter pretending to be them.
 
@@ -188,6 +188,8 @@ The internet isn't one single network. It's thousands of interconnected networks
 ## The Browser's Secret Kitchen: Rendering the Page
 
 Okay, we made a request, it bounced around the world to some server, which responded with a bunch of code. How do we actually get something that that looks nice, and that we can interact with on the screen?
+
+Reminder, the server sent back some `HTML, CSS and Javascript files`.
 
 ### Step 1: Parsing the HTML → Building the DOM
 
